@@ -1,6 +1,63 @@
+
+#resume_container{
+ font-size: 1rem; 
+}
+#resume_projects {
+  font-size: 1.5rem;
+  text-align: justify;
+  text-justify: inter-word;
+
+}
+
+#resume_projects hr {
+page-break-after: always;
+
+}
+
+#resumesidebar {
+  float: right;
+  margin-left: 1em;
+  padding: 1em;
+  text-align: left;
+  background-color: #eeeeee;
+  width: 18%;
+}
+
+#resume_projects  h1, h2, h3, h4 {
+}
+
 body{
-    padding-top:50px;
+  padding-top:50px;
 }
 footer{
-    padding-top:50px;
+  padding-top:50px;
 }
+@media print {
+
+#resume_projects {
+  font-size: 1.2rem;
+  text-align: justify;
+  text-justify: inter-word;
+
+}
+hr {
+page-break-after: always;
+
+}
+  .container {
+    /*font-size: .6em;*/
+  }
+
+  .navbar {
+    display: none !important;
+
+  }
+
+  .no-print {
+    display: none !important;
+
+  }
+
+
+}
+
