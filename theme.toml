@@ -1,18 +1,20 @@
-name = "Hugo Bootswatch"
-license = "MIT"
-licenselink = "https://github.com/nilproductions/hugo-bootswatch/LICENSE.md"
-description = "Bootswatch Theme (Bootstrap 3) for Hugo"
-homepage = "https://github.com/nilproductions/hugo-bootswatch"
-tags = ["bootstrap", "bootswatch"]
-features = []
-min_version= 0.13
+name = "M Wilding Bootswatch"
 
 [author]
-  name = "Nicholas Whittier"
-  homepage = "http://imperialwicket.com"
+  name = "Michael WC Wilding"
+  homepage = "http://mike.heywilding.com"
 
 # If porting an existing theme
 [original]
   name = "Thomas Park"
   homepage = "http://bootswatch.com"
   repo = "https://github.com/thomaspark/bootswatch"
+homepage = "https://github.com/nilproductions/hugo-bootswatch"
+
+/*FIXME: my formatting  is broken*/
+license = "MIT"
+licenselink = "https://github.com/nilproductions/hugo-bootswatch/LICENSE.md"
+description = "Bootswatch Theme (Bootstrap 3) for Hugo"
+tags = ["bootstrap", "bootswatch"]
+features = []
+min_version= 0.13

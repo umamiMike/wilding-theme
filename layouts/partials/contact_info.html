@@ -1,0 +1,11 @@
+<div>
+  <a href="{{ .Site.BaseURL }}">
+    <img src="{{ .Site.Params.avatar }}" class="avatar"></img>
+  </a>
+<h1>My name is:  {{ .Site.Params.name }} </h1>
+<p>github.com -> <a href="https://github.com/{{ .Site.Params.github_username }}" >{{ .Site.Params.github_username }}</a> </p>
+<p><a href="mailto:{{ .Site.Params.contact_email }}">{{ .Site.Params.contact_email }}</a> </p>
+<p> {{ .Site.Params.street_address }} </p>
+<p> {{ .Site.Params.phone }} </p>
+
+</div>
