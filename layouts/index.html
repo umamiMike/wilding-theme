@@ -6,9 +6,14 @@
   <div>
     <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
     <!--<span class="lead">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>-->
-    <p>{{if (gt (len .Summary) 0)   }}</p>
-    {{ slicestr .Summary 0 40 }} 
-    {{ end }}
+
+    <!--
+            will truncate the summary to 40 characters and deals with 0 length files
+            edge case
+    -->
+    <!--<p>{{if (gt (len .Summary) 0)   }}</p>-->
+    <!--{{ slicestr .Summary 0 40 }} -->
+    <!--{{ end }}-->
   </div>
   {{ end }}
   {{ partial "container-footer.html" . }}
