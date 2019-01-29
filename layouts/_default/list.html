@@ -2,12 +2,11 @@
 {{ partial "navbar.html" . }}
 
     <div class="container">
-      I am listo
-        {{ range .Data.Pages  }}
+        {{ range .Pages  }}
         <div class="post">
             <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
             <!--<span class="lead">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>-->
-            <!--<p>{{ .Summary }}</p>-->
+            <p>{{ .Content }}</p>
         </div>
         {{ end }}
         {{ partial "container-footer.html" . }}
