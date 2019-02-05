@@ -1,3 +1,11 @@
+
+body{
+  /*padding-top:50px;*/
+}
+footer{
+  /*padding-top:50px;*/
+}
+
 .float-left {
 float: left;
 }
@@ -20,24 +28,23 @@ page-break-after: always;
 
 }
 
+
+.myclass h1 {
+
+}
+
 #resumesidebar {
   float: right;
-  margin-left: 1em;
-  padding: 1em;
-  text-align: left;
-  background-color: #eeeeee;
+  margin-left: 2em;
+  /*padding: 1em;*/
+  /*text-align: left;*/
+  /*background-color: #eeeeee;*/
   width: 18%;
 }
 
 #resume_projects  h1, h2, h3, h4 {
 }
 
-body{
-  /*padding-top:50px;*/
-}
-footer{
-  /*padding-top:50px;*/
-}
 @media print {
 
 #resume_projects {
