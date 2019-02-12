@@ -1,18 +1,14 @@
-<div>
-        <span>  <a href="{{ .Site.BaseURL }}">
-<i class="far fa-address-card fa-7x"></i>
-<div class="avatar">
-    <img src="{{ .Site.Params.avatar }}" ></img>
-</div>
-  </a>
-<h1>{{ .Site.Params.name }} </h1>
-<a href="https://github.com/{{ .Site.Params.github_username }}" >
-<i class="far fa-address-card fa-5x"></i>
-</a>
-<a href="mailto:{{ .Site.Params.contact_email }}">{{ .Site.Params.contact_email }}</a>
-{{ .Site.Params.street }} 
-{{ .Site.Params.city_state_zip }}
-{{ .Site.Params.phone }} 
-</span>
+<div class="inline-flex">
+        <img class="flex-1 w-10 h-10 rounded-full" src="{{ .Site.Params.avatar }}" ></img>
+        <p class="flex-1" >{{ .Site.Params.name }} </p>
+        <a class="flex-1" href="https://github.com/{{ .Site.Params.github_username }}" >
+                <i class="fab fa-github"></i>
+        </a>
+        <a class="flex-1" href="mailto:{{ .Site.Params.contact_email }}">
+                <i class="far fa-address-card sm"></i>
+        </a>
+        {{ .Site.Params.street }} 
+        {{ .Site.Params.city_state_zip }}
+        {{ .Site.Params.phone }} 
 
 </div>

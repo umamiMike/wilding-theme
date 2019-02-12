@@ -1,15 +1,11 @@
 <div class="d-print-none navbar navbar-default ">
-        <div class="container">
-                <div class="navbar-header">
-                        <a href="/" class="float-left">{{ .Site.Title }}</a>
-                </div>
-                <div class="navbar-collapse collapse" id="navbar-main">
-                        <ul class="nav navbar-nav navbar-right">
-                                {{ range .Site.Pages.GroupBy "Section" }}
-                                <li><a href="/{{ .Key }}">{{ .Key }}</a></li>
-                                {{ end }}
-                                </li> 
-                        </ul>
+        <div class="inline-flex mb-4 container">
+                <a href="/" class="float-left">{{ .Site.Title }}</a>
+                <div class="flex-1">
+                        {{ range .Site.Pages.GroupBy "Section" }}
+                        <span class="flex-1"><a href="/{{ .Key }}">{{ .Key }}</a></span>
+                        {{ end }}
                 </div>
         </div>
+</div>
 </div>

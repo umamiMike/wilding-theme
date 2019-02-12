@@ -1,22 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+/*@import url('https://fonts.googleapis.com/css?family=Roboto');*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald');
+
 body{
-        font-family: 'Roboto', 'sans-serif';
+        /*font-family: 'Roboto', 'sans-serif';*/
+        font-family: 'Monserrat', 'sans-serif';*/
   /*padding-top:50px;*/
 }
 footer{
   /*padding-top:50px;*/
 }
 
-.float-left {
-float: left;
-}
-.avatar {
-border-radius: 50%;
-width: 140px;
-margin-right: 20px;
-float: left;
-transform: translate(-50%, -50%);
-}
+/*.float-left {*/
+/*float: left;*/
+/*}*/
 #resume_container{
  /*font-size: 1rem; */
 }
