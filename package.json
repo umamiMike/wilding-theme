@@ -1,0 +1,24 @@
+{
+  "name": "wilding-theme",
+  "version": "0.0.1",
+  "description": "theme for hugo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umamiMike/wilding-theme.git"
+  },
+  "author": "Michael Wilding",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/umamiMike/wilding-theme/issues"
+  },
+  "homepage": "https://github.com/umamiMike/wilding-theme#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "tailwindcss": "^0.7.4"
+  }
+}
