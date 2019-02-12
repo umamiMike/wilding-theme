@@ -1,11 +1,18 @@
 <div>
-  <a href="{{ .Site.BaseURL }}">
-    <img src="{{ .Site.Params.avatar }}" class="avatar"></img>
+        <span>  <a href="{{ .Site.BaseURL }}">
+<i class="far fa-address-card fa-7x"></i>
+<div class="avatar">
+    <img src="{{ .Site.Params.avatar }}" ></img>
+</div>
   </a>
-<h1>My name is:  {{ .Site.Params.name }} </h1>
-<p>github.com -> <a href="https://github.com/{{ .Site.Params.github_username }}" >{{ .Site.Params.github_username }}</a> </p>
-<p><a href="mailto:{{ .Site.Params.contact_email }}">{{ .Site.Params.contact_email }}</a> </p>
-<p> {{ .Site.Params.street_address }} </p>
-<p> {{ .Site.Params.phone }} </p>
+<h1>{{ .Site.Params.name }} </h1>
+<a href="https://github.com/{{ .Site.Params.github_username }}" >
+<i class="far fa-address-card fa-5x"></i>
+</a>
+<a href="mailto:{{ .Site.Params.contact_email }}">{{ .Site.Params.contact_email }}</a>
+{{ .Site.Params.street }} 
+{{ .Site.Params.city_state_zip }}
+{{ .Site.Params.phone }} 
+</span>
 
 </div>
