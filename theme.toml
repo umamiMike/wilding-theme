@@ -1,8 +1,8 @@
-name = "M Wilding Bootswatch"
+name = "Wilding Theme"
 
 [author]
   name = "Michael WC Wilding"
-  homepage = "http://mike.heywilding.com"
+  homepage = "http://github.com/umamiMike/wilding-theme"
 
 # If porting an existing theme
 [original]
@@ -11,10 +11,9 @@ name = "M Wilding Bootswatch"
   repo = "https://github.com/thomaspark/bootswatch"
 homepage = "https://github.com/nilproductions/hugo-bootswatch"
 
-/*FIXME: my formatting  is broken*/
 license = "MIT"
-licenselink = "https://github.com/nilproductions/hugo-bootswatch/LICENSE.md"
+licenselink = "https://github.com/umamiMike/wilding-theme/LICENSE.md"
 description = "Bootswatch Theme (Bootstrap 3) for Hugo"
-tags = ["bootstrap", "bootswatch"]
+tags = ["resume", "blog"]
 features = []
-min_version= 0.13
+min_version= 0.1
