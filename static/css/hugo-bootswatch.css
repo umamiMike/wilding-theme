@@ -1,5 +1,6 @@
-
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 body{
+        font-family: 'Roboto', 'sans-serif';
   /*padding-top:50px;*/
 }
 footer{
@@ -11,14 +12,17 @@ float: left;
 }
 .avatar {
 border-radius: 50%;
-width: 40px;
+width: 140px;
+margin-right: 20px;
+float: left;
+transform: translate(-50%, -50%);
 }
 #resume_container{
- font-size: 1rem; 
+ /*font-size: 1rem; */
 }
 #resume_projects {
-  font-size: 1.5rem;
-  text-align: justify;
+  /*font-size: 1.5rem;*/
+  /*text-align: justify;*/
   text-justify: inter-word;
 
 }
@@ -29,17 +33,11 @@ page-break-after: always;
 }
 
 
-.myclass h1 {
-
-}
-
 #resumesidebar {
+        font-size: .9em;
   float: right;
   margin-left: 2em;
-  /*padding: 1em;*/
-  /*text-align: left;*/
-  /*background-color: #eeeeee;*/
-  width: 18%;
+  width: 20%;
 }
 
 #resume_projects  h1, h2, h3, h4 {
@@ -48,8 +46,8 @@ page-break-after: always;
 @media print {
 
 #resume_projects {
-  font-size: 1.2rem;
-  text-align: justify;
+  /*font-size: 1.2rem;*/
+  /*text-align: justify;*/
   text-justify: inter-word;
 
 }
