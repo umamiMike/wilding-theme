@@ -1,16 +1,10 @@
+    <div class="container p-2 ">
 {{ partial "header.html" . }}
 {{ partial "navbar.html" . }}
-
-    <div class="container mx-auto px-4">
 {{ partial "contact_info.html" . }}
-      <div class="d-print-none no-print">
-      </div>
-        <div class="post">
-            {{ .Content }}
-        </div>
-
+<div class="container content">
+	{{ .Content }}
+</div>
         {{ partial "container-footer.html" . }}
- 
      </div>
-     
 {{ partial "footer.html" . }}

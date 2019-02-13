@@ -1,41 +1,15 @@
-/*@import url('https://fonts.googleapis.com/css?family=Roboto');*/
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald');
-
-body{
-        /*font-family: 'Roboto', 'sans-serif';*/
-        font-family: 'Monserrat', 'sans-serif';*/
-  /*padding-top:50px;*/
-}
-footer{
-  /*padding-top:50px;*/
-}
-
-/*.float-left {*/
-/*float: left;*/
-/*}*/
-#resume_container{
- /*font-size: 1rem; */
-}
-#resume_projects {
-  /*font-size: 1.5rem;*/
-  /*text-align: justify;*/
+p {
+  text-align: justify;
   text-justify: inter-word;
+}
+.container {
+
+  padding: 16px;
 
 }
-
-#resume_projects hr {
-page-break-after: always;
-
+.content {
+line-height: 1.9;
 }
-
-
-#resumesidebar {
-        font-size: .9em;
-  float: right;
-  margin-left: 2em;
-  width: 20%;
-}
-
 #resume_projects  h1, h2, h3, h4 {
 }
 
@@ -64,7 +38,6 @@ page-break-after: always;
     display: none !important;
 
   }
-
 
 }
 

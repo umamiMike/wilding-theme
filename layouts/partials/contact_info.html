@@ -1,14 +1,17 @@
-<div class="inline-flex">
-        <img class="flex-1 w-10 h-10 rounded-full" src="{{ .Site.Params.avatar }}" ></img>
-        <p class="flex-1" >{{ .Site.Params.name }} </p>
-        <a class="flex-1" href="https://github.com/{{ .Site.Params.github_username }}" >
-                <i class="fab fa-github"></i>
-        </a>
-        <a class="flex-1" href="mailto:{{ .Site.Params.contact_email }}">
-                <i class="far fa-address-card sm"></i>
-        </a>
-        {{ .Site.Params.street }} 
-        {{ .Site.Params.city_state_zip }}
-        {{ .Site.Params.phone }} 
+<div class="container flex p-2">
+  <div class="flex-1">
+    <img class="block h-16 w-16 sm:h-24 sm:w-24 rounded-full mx-auto" src="{{ .Site.Params.avatar }}"></img>
+  </div>
+  
+  <div class="flex-none">
+  <p class="" >{{ .Site.Params.name }} </p>
 
+  </div>
+  <a class="flex-1" href="https://github.com/{{ .Site.Params.github_username }}" > <i class="fab fa-github"></i> </a>
+    <a href="mailto:{{ .Site.Params.contact_email }}">
+      <i class="far fa-address-card sm"></i>
+ {{ .Site.Params.street }} 
+ {{ .Site.Params.city_state_zip }}
+ {{ .Site.Params.phone }}
+    </a>
 </div>

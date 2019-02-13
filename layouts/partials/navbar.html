@@ -1,11 +1,9 @@
 <div class="d-print-none navbar navbar-default ">
-        <div class="inline-flex mb-4 container">
-                <a href="/" class="float-left">{{ .Site.Title }}</a>
-                <div class="flex-1">
+        <div class="bg-teal  mb-4 m-2">
+                <a href="/" class="">{{ .Site.Title }}</a>
                         {{ range .Site.Pages.GroupBy "Section" }}
-                        <span class="flex-1"><a href="/{{ .Key }}">{{ .Key }}</a></span>
+                        <span class="m-2 bold"><a href="/{{ .Key }}">{{ .Key }}</a></span>
                         {{ end }}
-                </div>
         </div>
 </div>
 </div>
