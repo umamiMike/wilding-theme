@@ -1,32 +1,160 @@
+
+/*@import url('https://fonts.googleapis.com/css?family=EB+Garamond');*/
+/*@import url('https://fonts.googleapis.com/css?family=Lora');*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+box-sizing: border-box; 
+  }
+
+body {
+  margin: 8px;
+/*font-family: 'EB Garamond', serif;*/
+/*font-family: 'Lora', serif;*/
+/*font-family: 'Georgia', serif;*/
+font-family: 'Montserrat', sans-serif;
+
+}
+
+.one-word {
+word-spacing: 9999px;
+}
+
+nav {
+background: beige;
+}
+
+.grid-1 {
+
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+
+}
+nav p {
+display: inline;
+}
+
+.site-title {
+width: 200px;
+
+}
+.site-title img {
+margin-right: 8px;
+}
+.shape-circle {
+  shape-outside: circle();
+
+}
+.float-left {
+float: left;
+}
+
+a {
+text-decoration:none;
+color: #211f1f;
+}
+
+.container {
+font-size:1em;
+background: grey;
+}
+
+.content {
+line-height: 1.3;
+}
 p {
+
+}
+.content p {
+
   text-align: justify;
   text-justify: inter-word;
+  margin-bottom: 1.1em;
 }
-.container {
+ /*
+  *headline a litte big
+  */
+ h1 {
 
-  padding: 16px;
+font-size:1.2em;
+}
+
+h2 { 
+font-size:1.1em;
+margin-bottom: 1.1em;
+}
+
+.content ul {
+  margin-bottom: 1.1em;
+}
+.contact {
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+  align-items:center;
+  min-height: 60px;
+  /*background-color: lightgrey;*/
+  /*overflow: scroll;*/
+  height:280px;
+}
+.contact * {
+
+display: inline;
+} 
+
+.rounded {
+  border-radius: 50%;
 
 }
-.content {
-line-height: 1.9;
+
+.hw32 {
+
+  height: 32px;
+  width: 32px;
 }
-#resume_projects  h1, h2, h3, h4 {
+
+.hw64 {
+
+  height: 64px;
+  width: 64px;
+}
+.contact img {
+  height: 80px;
+  border-radius: 50%;
+}
+.contact span {
+/*margin: 26px;*/
+}
+
+.sidebar {
+font-size: .8em;
+line-height: 1.3;
+float: right;
+margin: 3em;
+width: 16%;
+}
+
+.sidebar h1 {
+font-size: .2em;
+}
+
+.sidebar >  p {
+  margin-bottom: .5em;
+  text-align: left;
 }
 
 @media print {
-
-#resume_projects {
-  /*font-size: 1.2rem;*/
-  /*text-align: justify;*/
-  text-justify: inter-word;
-
-}
-hr {
-page-break-after: always;
-
-}
+  body {
+    font-size: .8em;
+  }
   .container {
-    /*font-size: .6em;*/
+    padding: 0px;
+  }
+  hr {
+    page-break-after: always;
+
+  }
+  .container {
+    font-size: .9em;
   }
 
   .navbar {

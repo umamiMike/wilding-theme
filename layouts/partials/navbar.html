@@ -1,9 +1,16 @@
-<div class="d-print-none navbar navbar-default ">
-        <div class="bg-teal  mb-4 m-2">
-                <a href="/" class="">{{ .Site.Title }}</a>
-                        {{ range .Site.Pages.GroupBy "Section" }}
-                        <span class="m-2 bold"><a href="/{{ .Key }}">{{ .Key }}</a></span>
-                        {{ end }}
-        </div>
-</div>
-</div>
+<nav class="grid-1">
+  <span class="site-title">
+		<a href="/">
+    <img class="float-left rounded hw64 shape-circle " src="{{ .Site.Params.avatar }}"></img>
+			<p> {{ .Site.Title }} </p>
+		</a>
+  </span>
+  </span>
+  <span class="grid-1">
+		{{ range .Site.Pages.GroupBy "Section" }}
+		<a href="/{{ .Key }}">
+			<h3> {{ .Key }}  </h3>
+		</a>
+		{{ end }}
+  </span>
+</nav>

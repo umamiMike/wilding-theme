@@ -1,17 +1,28 @@
-<div class="container flex p-2">
-  <div class="flex-1">
-    <img class="block h-16 w-16 sm:h-24 sm:w-24 rounded-full mx-auto" src="{{ .Site.Params.avatar }}"></img>
-  </div>
-  
-  <div class="flex-none">
-  <p class="" >{{ .Site.Params.name }} </p>
-
-  </div>
-  <a class="flex-1" href="https://github.com/{{ .Site.Params.github_username }}" > <i class="fab fa-github"></i> </a>
-    <a href="mailto:{{ .Site.Params.contact_email }}">
-      <i class="far fa-address-card sm"></i>
- {{ .Site.Params.street }} 
- {{ .Site.Params.city_state_zip }}
- {{ .Site.Params.phone }}
+<div class="grid contact">
+  <span>
+    <img src="{{ .Site.Params.avatar }}"></img>
+    <h3 class="" >{{ .Site.Params.name }} </h3>
+  </span>
+  <span>
+    <a href="https://github.com/{{ .Site.Params.github_username }}" > <span class="fab fa-github-square fa-2x"> </span> 
+      <p> github.com/umamiMike</p> 
     </a>
+  </span>
+  <span >
+    <a  href="https://twitter.com/{{ .Site.Params.twitter }}" > 
+      <i class="fab fa-twitter-square "></i><p> {{ .Site.Params.twitter }}</p> 
+    </a>
+  </span>
+  <span>
+    <a href="mailto:{{ .Site.Params.contact_email }}">
+      <p class="fas fa-envelope " > {{ .Site.Params.contact_email }} </p>
+    </a>
+  </span>
+  <span>
+    <p class="fas fa-address-card "> {{ .Site.Params.street }} {{ .Site.Params.city_state_zip }}
+    </p>
+  </span>
+  <span>
+    <p class="fas fa-phone-square"> {{ .Site.Params.phone }} </p>
+  </span>
 </div>
