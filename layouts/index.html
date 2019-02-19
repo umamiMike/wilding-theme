@@ -1,9 +1,6 @@
 {{ partial "header.html" . }}
 {{ partial "navbar.html" . }}
-<div class="container">
-  I am index      
   {{ range .Pages }}
-  <div>
     <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
     <!--<span class="lead">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>-->
 
@@ -14,10 +11,8 @@
     <!--<p>{{if (gt (len .Summary) 0)   }}</p>-->
     <!--{{ slicestr .Summary 0 40 }} -->
     <!--{{ end }}-->
-  </div>
   {{ end }}
   {{ partial "container-footer.html" . }}
 
-</div>
 
 {{ partial "footer.html" . }}
