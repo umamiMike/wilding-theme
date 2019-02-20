@@ -1,8 +1,10 @@
+{{ define "main" }}
 {{ partial "header.html" . }}
 {{ partial "navbar.html" . }}
 {{ partial "contact_info.html" . }}
-<div class="grid-1">
+<div class="">
 {{ .Content }}
 </div>
 {{ partial "container-footer.html" . }}
 {{ partial "footer.html" . }}
+{{ end }}
